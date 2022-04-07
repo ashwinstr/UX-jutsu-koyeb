@@ -2,4 +2,6 @@
 # web: bash run
 build:
   docker:
-      web: bash run
+      web: Dockerfile
+run:
+   web: bash run
