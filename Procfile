@@ -1,2 +1,1 @@
-docker: 
-    build: Dockerfile
+docker: Dockerfile
