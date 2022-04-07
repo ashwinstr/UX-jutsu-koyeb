@@ -1,3 +1,3 @@
 # docker: Dockerfile
 # web: bash run
-run: build Dockerfile
+web: yarn build:Dockerfile
