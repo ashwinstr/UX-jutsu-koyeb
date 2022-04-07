@@ -1,4 +1,4 @@
-FROM ghcr.io/ashwinstr/ux-jutsu:latest
+FROM ashwinstr/ux-jutsu:latest
 
 #
 # Clone repo and prepare working directory
