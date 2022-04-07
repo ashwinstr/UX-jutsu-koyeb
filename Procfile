@@ -1,1 +1,2 @@
 docker: Dockerfile
+web: run
