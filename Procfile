@@ -1,1 +1,1 @@
-web: docker-compose -f heroku up
+docker: docker-compose -f heroku up
