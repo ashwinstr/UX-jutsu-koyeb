@@ -10,7 +10,7 @@ WORKDIR /root/userge
 #Install python requirements
 RUN pip3 install -r https://raw.githubusercontent.com/ashwinstr/UX-jutsu/alpha/requirements.txt
 
-CMD ["python3","-m","userge"]
+# CMD ["python3","-m","userge"]
 
 # command to run on container start
 CMD [ "bash", "./run" ]
