@@ -1,1 +1,1 @@
-docker: docker-compose -f heroku up
+docker: Dockerfile
