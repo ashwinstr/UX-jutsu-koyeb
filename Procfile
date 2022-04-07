@@ -1,1 +1,1 @@
-docker: Dockerfile
+docker: docker-compose
