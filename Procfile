@@ -1,1 +1,2 @@
-docker: ['build . -t userge', 'run -p 8080:8080 userge']
+docker: build . -t userge_docker
+web: run userge_docker
