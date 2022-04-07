@@ -1,5 +1,5 @@
 # docker: Dockerfile
 # web: bash run
 build:
-    docker:
-        web: bash run
+  docker:
+      web: bash run
