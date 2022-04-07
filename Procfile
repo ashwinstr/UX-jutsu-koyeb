@@ -1,1 +1,1 @@
-docker: docker-compose
+docker: docker-compose.yml
