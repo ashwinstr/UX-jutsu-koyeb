@@ -1,1 +1,1 @@
-docker: docker-compose.yml
+docker: build . -t userge
