@@ -1,3 +1,3 @@
 # docker: Dockerfile
 # web: bash run
-web: build Dockerfile
+web: docker build Dockerfile
