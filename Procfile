@@ -1,2 +1,2 @@
 docker: Dockerfile
-web: run
+web: bash run
