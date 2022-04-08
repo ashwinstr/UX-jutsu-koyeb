@@ -50,6 +50,7 @@ _checkDefaultVars() {
         [WORKERS]=0
         [PREFERRED_LANGUAGE]="en"
         [DOWN_PATH]="downloads"
+        [UPSTREAM_REPO]="https://github.com/ashwinstr/UX-jutsu"
         [UPSTREAM_REMOTE]="upstream"
         [LOAD_UNOFFICIAL_PLUGINS]=true
         [CUSTOM_PLUGINS_REPO]=""
@@ -121,7 +122,7 @@ _checkPaths() {
 
 _checkUpstreamRepo() {
     remoteIsExist $UPSTREAM_REMOTE || addUpstream
-    editLastMessage "Fetching Data From UPSTREAM_REPO ..."
+    editLastMessage "Fetching Data From UPSTREAM_REPO UX-jutsu-koyeb..."
     fetchUpstream || updateUpstream && fetchUpstream || quit "Invalid UPSTREAM_REPO var !"
     fetchBranches
     updateBuffer
