@@ -1,2 +1,2 @@
 docker: build . -t userge_docker
-web: bash userge_docker
+web: yarn userge_docker
