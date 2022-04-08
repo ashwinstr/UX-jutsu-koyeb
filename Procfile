@@ -1,2 +1,2 @@
 # docker: build . -t userge_docker
-web: bash build:Dockerfile
+web: bash Dockerfile
