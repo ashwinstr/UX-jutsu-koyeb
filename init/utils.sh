@@ -95,7 +95,8 @@ upgradePip() {
 }
 
 installReq() {
-    pip3 install -U -r $1/requirements.txt &> /dev/null
+    # pip3 install -U -r $1/requirements.txt &> /dev/null
+    echo 'KAKASHI IS THE BEST'
 }
 
 printLine() {
