@@ -24,6 +24,7 @@ psutil>=5.7.3
 pybase64>=1.1.1
 PyDictionary>=2.0.1
 pymediainfo
+pymongo>=4.1.0
 git+https://github.com/ashwinstr/pyrogram.git@x21
 # git+https://github.com/pyrogram/pyrogram.git@master
 # pyrogram==1.4.1
