@@ -15,7 +15,7 @@ from json.decoder import JSONDecodeError
 from re import compile as comp_regex
 from typing import Set
 
-import heroku3
+# import heroku3
 from git import Repo
 from pyrogram import filters
 from requests import Session
@@ -101,12 +101,12 @@ class Config:
     ANTISPAM_SENTRY = False
     SPAM_PROTECTION = False
     RUN_DYNO_SAVER = False
-    HEROKU_ENV = bool(int(os.environ.get("HEROKU_ENV", "0")))
-    HEROKU_APP = (
-        heroku3.from_key(HEROKU_API_KEY).apps()[HEROKU_APP_NAME]
-        if HEROKU_ENV and HEROKU_API_KEY and HEROKU_APP_NAME
-        else None
-    )
+#    HEROKU_ENV = bool(int(os.environ.get("HEROKU_ENV", "0")))
+#    HEROKU_APP = (
+#        heroku3.from_key(HEROKU_API_KEY).apps()[HEROKU_APP_NAME]
+#        if HEROKU_ENV and HEROKU_API_KEY and HEROKU_APP_NAME
+#        else None
+#    )
     STATUS = None
     BOT_FORWARDS = False
     BOT_MEDIA = os.environ.get("BOT_MEDIA")
