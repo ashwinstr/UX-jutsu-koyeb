@@ -63,7 +63,7 @@ class Config:
     INSTA_ID = os.environ.get("INSTA_ID")
     INSTA_PASS = os.environ.get("INSTA_PASS")
     UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO")
-    UPSTREAM_REMOTE = os.environ.get("UPSTREAM_REMOTE")
+    UPSTREAM_REMOTE = os.environ.get("UPSTREAM_REMOTE", "upstream")
     SPAM_WATCH_API = os.environ.get("SPAM_WATCH_API")
     CURRENCY_API = os.environ.get("CURRENCY_API")
     OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY")
