@@ -151,6 +151,7 @@ _setupPlugins() {
 
 _checkUnoffPlugins() {
     # _setupPlugins Xtra true $LOAD_UNOFFICIAL_PLUGINS https://github.com/ashwinstr/Userge-Plugins-Fork.git
+    echo 'Kakashi removed XTRA plugins repo.'
 }
 
 _checkCustomPlugins() {
