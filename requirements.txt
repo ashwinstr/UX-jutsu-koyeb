@@ -51,3 +51,27 @@ ruamel.yaml==0.17.21
 ujson>=4.0.1
 youtube-search-python==1.5.1
 feedparser>=6.0.2
+
+# xtra requirements
+
+cairosvg
+colour
+deezloader
+emoji-country-flag
+google
+glitch-this
+gtts
+humanize
+justwatch
+lottie
+qrcode
+spotdl
+tracemoepy==3.8
+validators
+geopy
+prettytable
+newspaper3k
+pydub
+pyfiglet
+pytgcalls
+ffmpeg-python
