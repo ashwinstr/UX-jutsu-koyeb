@@ -65,7 +65,7 @@ addHeroku() {
 }
 
 addUpstream() {
-    git remote add $UPSTREAM_REMOTE ${UPSTREAM_REPO}
+    git remote add $UPSTREAM_REMOTE ${UPSTREAM_REPO%.git}.git
 }
 
 updateUpstream() {
@@ -73,7 +73,6 @@ updateUpstream() {
 }
 
 fetchUpstream() {
-    git init
     git fetch $UPSTREAM_REMOTE &> /dev/null
 }
 
@@ -87,7 +86,7 @@ fetchBranches() {
 }
 
 updateBuffer() {
-    git config http.postBuffer 134217728
+    git config http.postBuffer 50000000
 }
 
 upgradePip() {
