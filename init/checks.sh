@@ -19,7 +19,7 @@ if path_ not in sys.path:
     except:
         pass
 ')
-    [[ $appendDone ]] && bash ..run || "Going ahead..."
+    [[ $appendDone ]] && cd .. && cd .. && bash run || "Going ahead..."
 }
 
 _checkBashReq() {
