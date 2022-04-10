@@ -12,11 +12,14 @@ _appendPythonPath() {
     local appendErr=$(runPythonCode '
 import sys
 path_ = "/app/my_venv/bin/python3"
-try:
-    sys.path.append("/app/my_venv/bin/python3")
-    print("ADDDED IN PATH...")
-except Exception as e:
-    print(e)
+if path_ not in sys.path:
+    try:
+        sys.path.append("/app/my_venv/bin/python3")
+        print("ADDED IN PATH...")
+    except Exception as e:
+        print(e)
+else:
+    print("Path already there...")
 ')
     [[ $appendErr ]] && quit "Appending failed... > $appendErr" || log "Python3.10 should be added by now..."
 }
