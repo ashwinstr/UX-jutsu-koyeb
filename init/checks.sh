@@ -8,9 +8,10 @@
 #
 # All rights reserved.
 
-pip install -U --force-reinstall gitpython
-pip install -U --force-reinstall pymongo[srv]
-pip install -U --force-reinstall git+https://github.com/ashwinstr/pyrogram.git@x21
+pip3 install -U pip
+# pip install -U --force-reinstall gitpython
+# pip install -U --force-reinstall pymongo[srv]
+# pip install -U --force-reinstall git+https://github.com/ashwinstr/pyrogram.git@x21
 
 
 _checkBashReq() {
