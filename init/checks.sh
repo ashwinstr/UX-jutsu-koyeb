@@ -10,6 +10,7 @@
 
 _changePythonPath() {
     export PYTHONPATH=/app/my_venv/bin/python3
+    echo "Changed PYTHONPATH..."
 }
 
 _checkBashReq() {
