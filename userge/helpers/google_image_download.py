@@ -14,7 +14,10 @@ import json
 import os
 import re
 import ssl
-import sys
+try:
+    import sys
+except:
+    pass
 import time  # Importing the time library to check the time of code execution
 import urllib.request
 from http.client import BadStatusLine, IncompleteRead

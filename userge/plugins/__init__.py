@@ -10,7 +10,10 @@
 
 __all__ = ["ROOT", "get_all_plugins"]
 
-import sys
+try:
+    import sys
+except:
+    pass
 from os.path import dirname
 from typing import List
 

@@ -11,7 +11,10 @@
 __all__ = ['Restart']
 
 import os
-import sys
+try:
+    import sys
+except:
+    pass
 import signal
 
 import psutil

@@ -1,4 +1,7 @@
-from sys import version_info
+try:
+    from sys import version_info
+except:
+    pass
 
 from pyrogram import __version__ as __pyro_version__  # noqa
 
