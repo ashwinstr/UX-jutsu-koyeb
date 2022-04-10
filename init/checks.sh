@@ -9,10 +9,14 @@
 # All rights reserved.
 
 _appendPythonPath() {
-    $(runPythonCode '
+    local appendErr=$(runPythonCode '
 import sys
-sys.path.append("/app/my_venv/bin/python3")    
+try:
+    sys.path.append("/app/my_venv/bin/python3")
+except Exception as e:
+    print(e)
 ')
+    [[ appendErr ]] && quit "Appending failed..." > $appendErr || log "Python3.10 should be added by now..."
 }
 
 _checkBashReq() {
