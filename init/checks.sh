@@ -107,7 +107,12 @@ _checkDatabase() {
     editLastMessage "Checking DATABASE_URL ..."
 #    $(runPythonModule 'pip3 install -U pymongo[srv]')
     local mongoErr=$(runPythonCode '
-from pymongo import pymongo
+import sys
+
+sys.path
+sys.executable
+
+import pymongo
 try:
     pymongo.MongoClient("'$DATABASE_URL'").list_database_names()
 except Exception as e:
