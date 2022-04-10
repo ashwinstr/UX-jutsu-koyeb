@@ -105,6 +105,7 @@ print(quote_plus("'$uNameAndPass'"))')
 
 _checkDatabase() {
     editLastMessage "Checking DATABASE_URL ..."
+    pip install pymongo[srv]
     local mongoErr=$(runPythonCode '
 import pymongo
 try:
