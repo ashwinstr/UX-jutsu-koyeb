@@ -16,7 +16,7 @@ _changePythonPath() {
 import sys
 print(sys.path)
 ')
-    echo paths_
+    echo $paths_
 }
 
 _checkBashReq() {
