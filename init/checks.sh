@@ -10,12 +10,12 @@
 
 _checkReq() {
     log "Installing basic packages ..."
-    local installingReq=$(runPythonCode '
-import os
-os.system(
-    "pip3 install -U gitpython && pip3 install -U pymongo[srv] && pip3 install -U git+https://github.com/ashwinstr/pyrogram.git@x21"
-)
-')
+#    local installingReq=$(runPythonCode '
+#import os
+#os.system(
+#    "pip3 install -U gitpython && pip3 install -U pymongo[srv] && pip3 install -U git+https://github.com/ashwinstr/pyrogram.git@x21"
+#)
+#')
 }
 
 _checkBashReq() {
