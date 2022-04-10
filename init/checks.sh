@@ -18,6 +18,16 @@ print(sys.path)
     echo $paths_
 }
 
+_checkImports() {
+    local check=$(runPythonCode '
+try:
+    import pymongo
+except Exception as e:
+    print(e)
+')
+    [[ $check]] && python3.10 -m pip3 install -t "/app/my_venv/lib/python3.10/site-packages" || echo "IDK now..."
+}
+
 _checkBashReq() {
     log "Checking Bash Commands ..."
     command -v jq &> /dev/null || quit "Required command : jq : could not be found !"
