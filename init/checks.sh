@@ -8,7 +8,7 @@
 #
 # All rights reserved.
 
-_checkReq{
+_checkReq() {
     log "Installing basic packages ..."
     command pip3 install -U pip > /dev/null || quit "Failed at pip upgrade !"
     command pip3 install -U --force-reinstall gitpython > /dev/null || quit "Failed at git !"
