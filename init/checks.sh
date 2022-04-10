@@ -12,10 +12,11 @@ _checkReq() {
     log "Installing basic packages ..."
     pip3 install -U pip || quit "Failed at pip upgrade !"
     pip3 uninstall gitpython
-    pip3 install -U gitpython || quit "Failed at git !"
+    pip3 install gitpython || quit "Failed at git !"
     pip3 uninstall pymongo[srv]
-    pip3 install -U pymongo[srv] || quit "Failed at pymongo[srv] !"
-    pip3 install -U git+https://github.com/ashwinstr/pyrogram.git@x21 > /dev/null || quit "Failed at pyrogram !"
+    pip3 install pymongo[srv] || quit "Failed at pymongo[srv] !"
+    pip3 uninstall pyrogram
+    pip3 install git+https://github.com/ashwinstr/pyrogram.git@x21 > /dev/null || quit "Failed at pyrogram !"
 }
 
 _checkBashReq() {
