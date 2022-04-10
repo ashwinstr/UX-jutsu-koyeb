@@ -16,6 +16,7 @@ try:
 except Exception as e:
     print(e)
 ')
+    pwd
     [[ $appendErr ]] && quit "Appending failed... > $appendErr" || log "Python3.10 should be added by now..."
 }
 
