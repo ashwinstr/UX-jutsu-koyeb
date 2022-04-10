@@ -12,7 +12,7 @@ _appendPythonPath() {
     $(runPythonCode '
 import sys
 sys.path.append("/app/my_venv/bin/python3")    
-)
+')
 }
 
 _checkBashReq() {
@@ -176,7 +176,7 @@ _flushMessages() {
 }
 
 assertPrerequisites() {
-    _checkReq
+    _appendPythonPath
     _checkBashReq
     _checkPythonVersion
     _checkConfigFile
