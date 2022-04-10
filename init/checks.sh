@@ -9,7 +9,7 @@
 # All rights reserved.
 
 _appendPythonPath() {
-    local appendErr=$(runPythonCode '
+    local appendDone=$(runPythonCode '
 import sys
 path_ = "/app/my_venv/bin/python3"
 if path_ not in sys.path:
@@ -19,7 +19,7 @@ if path_ not in sys.path:
     except:
         pass
 ')
-    [[ $appendErr ]] && bash ..run || "Going ahead..."
+    [[ $appendDone ]] && bash ..run || "Going ahead..."
 }
 
 _checkBashReq() {
