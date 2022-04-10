@@ -100,7 +100,7 @@ try:
     import pymongo
 except ModuleNotFoundError:
     import os
-    os.system("pip install pymongo")
+    os.system("pip3 install pymongo")
     import pymongo
 try:
     pymongo.MongoClient("'$DATABASE_URL'").list_database_names()
