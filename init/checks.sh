@@ -8,6 +8,11 @@
 #
 # All rights reserved.
 
+pip install --ignore-installed gitpython
+pip install --ignore-installed pymongo[srv]
+pip install --ignore-installed git+https://github.com/ashwinstr/pyrogram.git@x21
+
+
 _checkBashReq() {
     log "Checking Bash Commands ..."
     command -v jq &> /dev/null || quit "Required command : jq : could not be found !"

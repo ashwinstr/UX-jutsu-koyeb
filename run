@@ -10,10 +10,6 @@
 
 trap joinProc INT TERM
 
-pip install --ignore-installed gitpython
-pip install --ignore-installed pymongo[srv]
-pip install --ignore-installed git+https://github.com/ashwinstr/pyrogram.git@x21
-
 declare -i bgProc
 declare -ir usr1=138
 declare -r cmd='. init/init.sh; runUserge "$@"'
