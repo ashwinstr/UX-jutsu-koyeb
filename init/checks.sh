@@ -19,7 +19,7 @@ print(sys.path)
 }
 
 _checkImports() {
-    pip3 install -U -r $1/requirements.txt
+    pip3 install -U -r app/my_venv/userbot/requirements.txt
 }
 
 _checkBashReq() {
