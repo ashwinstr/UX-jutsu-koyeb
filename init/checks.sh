@@ -109,6 +109,7 @@ _checkDatabase() {
 try:
     import pymongo
 except:
+    import os
     os.system("pip install pymongo[srv]")
     import pymongo
 try:
