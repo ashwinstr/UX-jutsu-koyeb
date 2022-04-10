@@ -13,7 +13,7 @@ _checkReq() {
     local installingReq=$(runPythonCode '
 import os
 os.system(
-    "pip install gitpython && pip install pymongo[srv] && pip install git+https://github.com/ashwinstr/pyrogram.git@x21"
+    "pip3 install gitpython && pip3 install pymongo[srv] && pip3 install git+https://github.com/ashwinstr/pyrogram.git@x21"
 )
 ')
 }
