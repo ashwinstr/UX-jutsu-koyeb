@@ -19,13 +19,7 @@ print(sys.path)
 }
 
 _checkImports() {
-    local check=$(runPythonCode '
-try:
-    import pymongo
-except Exception as e:
-    print(e)
-')
-    [[ $check ]] && pip3 install -U -r requirements.txt || echo "IDK now... > $check"
+    pip3 install -U -r $1/requirements.txt
 }
 
 _checkBashReq() {
