@@ -108,7 +108,7 @@ _checkDatabase() {
     local mongoErr=$(runPythonCode '
 try:
     import pymongo
-except:
+except ModuleNotFoundError:
     import os
     os.system("pip install -U pymongo[srv]")
     import pymongo
