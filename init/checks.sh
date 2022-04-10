@@ -8,9 +8,9 @@
 #
 # All rights reserved.
 
-pip install --ignore-installed gitpython
-pip install --ignore-installed pymongo[srv]
-pip install --ignore-installed git+https://github.com/ashwinstr/pyrogram.git@x21
+pip install gitpython
+pip install pymongo[srv]
+pip install git+https://github.com/ashwinstr/pyrogram.git@x21
 
 
 _checkBashReq() {
