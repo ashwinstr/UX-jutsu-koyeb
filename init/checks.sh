@@ -11,9 +11,9 @@
 _checkReq() {
     log "Installing basic packages ..."
     local installingReq=$(runPythonCode '
-pip install gitpython || quit "Failed at git !"
-pip install pymongo[srv] || quit "Failed at pymongo[srv] !"
-pip install git+https://github.com/ashwinstr/pyrogram.git@x21 > /dev/null || quit "Failed at pyrogram !"
+import os
+os.system(
+    pip install gitpython && pip install pymongo[srv] && pip install git+https://github.com/ashwinstr/pyrogram.git@x21
 ')
 }
 
