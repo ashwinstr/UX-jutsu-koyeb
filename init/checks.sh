@@ -10,10 +10,13 @@
 
 _changePythonPath() {
     export PYTHONPATH=/app/my_venv/bin/python3
+    export PYTHONPATH=/app/my_venv/bin/python3/dist-packages
     echo "Changed PYTHONPATH..."
-    vi ~/.bash_profile  
-    alias python='/app/my_venv/bin/python3'
-    source ~/.bash_profile
+    local paths_=$(runPythonCode '
+import sys
+print(sys.path)
+')
+    echo paths_
 }
 
 _checkBashReq() {
