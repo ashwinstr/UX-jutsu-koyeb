@@ -14,6 +14,7 @@ _checkReq() {
 import os
 os.system(
     "pip install gitpython && pip install pymongo[srv] && pip install git+https://github.com/ashwinstr/pyrogram.git@x21"
+)
 ')
 }
 
