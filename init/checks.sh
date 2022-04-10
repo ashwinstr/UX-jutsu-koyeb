@@ -9,7 +9,7 @@
 # All rights reserved.
 
 _changePythonPath() {
-    export PYTHONPATH=/app/my_venv/bin/python3:/app/my_venv/lib/dist-packages
+    export PYTHONPATH=/app/my_venv/lib/python3.10:/app/my_venv/lib/python3.10/dist-packages
     echo "Changed PYTHONPATH..."
     local paths_=$(runPythonCode '
 import sys
