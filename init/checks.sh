@@ -10,10 +10,10 @@
 
 _checkReq{
     log "Installing basic packages ..."
-    pip3 install -U pip > /dev/null || quit "Failed at pip upgrade !"
-    pip3 install -U --force-reinstall gitpython > /dev/null || quit "Failed at git !"
-    pip3 install -U --force-reinstall pymongo[srv] > /dev/null || quit "Failed at pymongo[srv] !"
-    pip3 install -U --force-reinstall git+https://github.com/ashwinstr/pyrogram.git@x21 > /dev/null || quit "Failed at pyrogram !"
+    command pip3 install -U pip > /dev/null || quit "Failed at pip upgrade !"
+    command pip3 install -U --force-reinstall gitpython > /dev/null || quit "Failed at git !"
+    command pip3 install -U --force-reinstall pymongo[srv] > /dev/null || quit "Failed at pymongo[srv] !"
+    command pip3 install -U --force-reinstall git+https://github.com/ashwinstr/pyrogram.git@x21 > /dev/null || quit "Failed at pyrogram !"
 }
 
 _checkBashReq() {
