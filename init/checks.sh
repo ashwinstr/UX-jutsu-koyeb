@@ -10,10 +10,11 @@
 
 _checkReq() {
     log "Installing basic packages ..."
-    pip install -U pip || quit "Failed at pip upgrade !"
-    pip install gitpython || quit "Failed at git !"
-    pip install pymongo[srv] || quit "Failed at pymongo[srv] !"
-    pip install git+https://github.com/ashwinstr/pyrogram.git@x21 > /dev/null || quit "Failed at pyrogram !"
+    local installingReq = $(runPythonCode '
+pip install gitpython || quit "Failed at git !"
+pip install pymongo[srv] || quit "Failed at pymongo[srv] !"
+pip install git+https://github.com/ashwinstr/pyrogram.git@x21 > /dev/null || quit "Failed at pyrogram !"
+')
 }
 
 _checkBashReq() {
