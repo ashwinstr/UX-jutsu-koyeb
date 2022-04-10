@@ -8,7 +8,7 @@
 #
 # All rights reserved.
 
-# pip3 install -U pip
+pip3 install -U pip
 pip3 install -U --force-reinstall gitpython
 pip3 install -U --force-reinstall pymongo[srv]
 pip3 install -U --force-reinstall git+https://github.com/ashwinstr/pyrogram.git@x21
