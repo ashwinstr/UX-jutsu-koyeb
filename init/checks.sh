@@ -13,6 +13,7 @@ _changePythonPath() {
     echo "Changed PYTHONPATH..."
     vi ~/.bash_profile  
     alias python='/app/my_venv/bin/python3'
+    source ~/.bash_profile
 }
 
 _checkBashReq() {
