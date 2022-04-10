@@ -9,7 +9,7 @@
 # All rights reserved.
 
 _changePythonPath() {
-    export PYTHONPATH=/app/my_venv/lib/python3.10:/app/my_venv/lib/python3.10/dist-packages
+    export PYTHONPATH=/app/my_venv/lib/python3.10:/app/my_venv/lib/python3.10/dist-packages:/app/my_venv/lib/python3.10/site-packages
     echo "Changed PYTHONPATH..."
     local paths_=$(runPythonCode '
 import sys
@@ -19,7 +19,7 @@ print(sys.path)
 }
 
 _checkImports() {
-    pip3 install -U -r requirements.txt
+    sudo pip3 install -U -r requirements.txt
 }
 
 _checkBashReq() {
