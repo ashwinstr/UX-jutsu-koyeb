@@ -25,7 +25,7 @@ pybase64>=1.1.1
 PyDictionary>=2.0.1
 pymediainfo
 pymongo
-git+https://github.com/ashwinstr/pyrogram.git@x21
+git+https://github.com/ashwinstr/pyrogram.git@x21#egg=pyrogram
 # git+https://github.com/pyrogram/pyrogram.git@master
 # pyrogram==1.4.1
 pySmartDL>=1.3.4
