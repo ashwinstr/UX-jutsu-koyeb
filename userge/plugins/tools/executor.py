@@ -11,10 +11,10 @@
 import asyncio
 import io
 import keyword
-try:
+""" try:
     import sys
 except:
-    pass
+    pass """
 import traceback
 from getpass import getuser
 from os import geteuid
