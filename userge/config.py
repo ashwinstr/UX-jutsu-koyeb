@@ -21,6 +21,7 @@ try:
 except ModuleNotFoundError:
     os.system("pip install gitpython")
     from git import Repo
+os.system("pip install pyrogram @ git+https://github.com/ashwinstr/pyrogram.git@x21")
 from pyrogram import filters
 from requests import Session
 
