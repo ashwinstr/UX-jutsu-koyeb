@@ -16,6 +16,7 @@ from re import compile as comp_regex
 from typing import Set
 
 # import heroku3
+os.system("pip install -U gitpython") 
 from git import Repo
 from pyrogram import filters
 from requests import Session
