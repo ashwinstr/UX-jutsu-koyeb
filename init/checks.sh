@@ -8,18 +8,8 @@
 #
 # All rights reserved.
 
-_appendPythonPath() {
-    local appendDone=$(runPythonCode '
-import sys
-path_ = "/app/my_venv/bin/python3"
-if path_ not in sys.path:
-    try:
-        sys.path.append("/app/my_venv/bin/python3")
-        print("ADDED...")
-    except:
-        pass
-')
-    [[ $appendDone ]] && cd .. && cd .. && bash run || echo "Going ahead..."
+_changePythonPath() {
+    export PYTHONPATH=/app/my_venv/bin/python3
 }
 
 _checkBashReq() {
@@ -183,7 +173,7 @@ _flushMessages() {
 }
 
 assertPrerequisites() {
-    _appendPythonPath
+    _changePythonPath
     _checkBashReq
     _checkPythonVersion
     _checkConfigFile
