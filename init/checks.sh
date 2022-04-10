@@ -95,9 +95,8 @@ print(quote_plus("'$uNameAndPass'"))')
 
 _checkDatabase() {
     editLastMessage "Checking DATABASE_URL ..."
+    pip3 install pymongo
     local mongoErr=$(runPythonCode '
-import os
-os.system("pip3 install pymongo")
 import pymongo
 try:
     pymongo.MongoClient("'$DATABASE_URL'").list_database_names()
