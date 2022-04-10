@@ -10,10 +10,7 @@
 
 __all__ = ["ROOT", "get_all_plugins"]
 
-""" try:
-    import sys
-except:
-    pass """
+import sys
 from os.path import dirname
 from typing import List
 

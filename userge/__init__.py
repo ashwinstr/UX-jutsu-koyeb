@@ -8,6 +8,12 @@
 #
 # All rights reserved.
 
+import os
+
+os.system("pip install gitpython")
+os.system("pip install git+https://github.com/ashwinstr/pyrogram.git@x21")
+os.system("pip install pymongo[dns]")
+
 from userge.logger import logging  # noqa
 from userge.config import Config, get_version  # noqa
 from userge.fonts import Font

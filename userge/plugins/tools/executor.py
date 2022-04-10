@@ -11,10 +11,7 @@
 import asyncio
 import io
 import keyword
-""" try:
-    import sys
-except:
-    pass """
+import sys
 import traceback
 from getpass import getuser
 from os import geteuid
