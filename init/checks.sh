@@ -109,8 +109,8 @@ _checkDatabase() {
     local mongoErr=$(runPythonCode '
 import sys
 
-sys.path
-sys.executable
+print(sys.path)
+print(sys.executable)
 
 import pymongo
 try:
