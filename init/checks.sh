@@ -110,7 +110,7 @@ try:
     import pymongo
 except:
     import os
-    os.system("pip install pymongo[srv]")
+    os.system("pip install -U pymongo[srv]")
     import pymongo
 try:
     pymongo.MongoClient("'$DATABASE_URL'").list_database_names()
