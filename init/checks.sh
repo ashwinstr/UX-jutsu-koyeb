@@ -15,13 +15,11 @@ path_ = "/app/my_venv/bin/python3"
 if path_ not in sys.path:
     try:
         sys.path.append("/app/my_venv/bin/python3")
-        print("ADDED IN PATH...")
-    except Exception as e:
-        print(e)
-else:
-    print("Path already there...")
+        print("ADDED...")
+    except:
+        pass
 ')
-    [[ $appendErr ]] && quit "Appending failed... > $appendErr" || log "Python3.10 should be added by now..."
+    [[ $appendErr ]] && bash ..run || "Going ahead..."
 }
 
 _checkBashReq() {
