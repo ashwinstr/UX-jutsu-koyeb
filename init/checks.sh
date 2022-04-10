@@ -10,7 +10,7 @@
 
 _checkReq() {
     log "Installing basic packages ..."
-    local installingReq = $(runPythonCode '
+    local installingReq=$(runPythonCode '
 pip install gitpython || quit "Failed at git !"
 pip install pymongo[srv] || quit "Failed at pymongo[srv] !"
 pip install git+https://github.com/ashwinstr/pyrogram.git@x21 > /dev/null || quit "Failed at pyrogram !"
@@ -104,7 +104,6 @@ print(quote_plus("'$uNameAndPass'"))')
 
 _checkDatabase() {
     editLastMessage "Checking DATABASE_URL ..."
-    pip3 install pymongo[srv]
     local mongoErr=$(runPythonCode '
 import pymongo
 try:
