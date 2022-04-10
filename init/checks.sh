@@ -25,7 +25,7 @@ try:
 except Exception as e:
     print(e)
 ')
-    [[ $check ]] && python3 -m pip3 install -t "/app/my_venv/lib/python3.10/site-packages" || echo "IDK now... > $check"
+    [[ $check ]] && pip3 install -t "/app/my_venv/lib/python3.10/site-packages" || echo "IDK now... > $check"
 }
 
 _checkBashReq() {
