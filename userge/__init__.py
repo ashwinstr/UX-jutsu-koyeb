@@ -21,6 +21,8 @@ for one in req:
 # os.system("pip3 install -U pip")
 os.system("pip3 install -U -r requirements.txt -t /usr/local/lib/python3.10/site-packages")
 os.system("ls /usr/local/lib/python3.10/site-packages")
+print("This is python 3.10...")
+os.system("ls etc/python3.9")
 # os.system("pip install git+https://github.com/ashwinstr/pyrogram@x21")
 # os.system("pip install pymongo[srv]")
 # os.system("pip install gitpython")
