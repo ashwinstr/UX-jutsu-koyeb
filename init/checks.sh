@@ -14,12 +14,7 @@ _changePythonVer() {
     apt-get update && apt-get upgrade -y
 }
 
-_changePythonPath() {
-    export PYTHONPATH=/app/my_venv/lib/python3.10/site-packages:/usr/local/lib/python3.10/site-packages:/usr/local/lib/python3.10/site-packages
-}
-
 _checkImports() {
-    . my_venv/bin/activate
     pip3 install -U -r requirements.txt
     pip3 freeze > requirements.txt
     cat requirements.txt
@@ -185,7 +180,6 @@ _flushMessages() {
 
 assertPrerequisites() {
     _changePythonVer
-    _changePythonPath
     _checkImports
     _checkBashReq
     _checkPythonVersion
