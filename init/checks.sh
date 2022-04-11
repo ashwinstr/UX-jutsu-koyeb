@@ -15,11 +15,7 @@ _changePythonVer() {
 }
 
 _checkImports() {
-    pip3 install -U -r requirements.txt
-    pip3 freeze > requirements.txt
-    cat requirements.txt
-    find / -name lyricsgenius && echo "^ HERE THEY ARE..."
-    dpkg -l | grep python
+    ls -ls usr/bin/python*
 }
 
 _checkBashReq() {
