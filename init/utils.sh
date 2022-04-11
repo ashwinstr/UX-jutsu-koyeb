@@ -87,7 +87,7 @@ fetchBranches() {
 }
 
 updateBuffer() {
-    git config http.postBuffer 50000000
+    git config http.postBuffer 75000000
 }
 
 upgradePip() {
