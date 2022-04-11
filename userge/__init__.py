@@ -10,13 +10,13 @@
 
 import os
 
-req = open("requirements.txt", "r").readlines()
+""" req = open("requirements.txt", "r").readlines()
 print("INSTALLING REQUIREMENTS !!!")
 for dep in req:
     try:
         os.system(f"pip install -U {dep}")
     except Exception as e:
-        print(e)
+        print(e) """
 
 # os.system("pip3 install -U pip")
 # os.system("pip3 install -U -r requirements.txt -t /usr/local/lib/python3.10/site-packages")
