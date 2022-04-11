@@ -17,6 +17,10 @@ os.system("pip3 install --no-cache-dir --target=/app/my_venv/lib/python3.10/site
 # os.system("pip install gitpython")
 # os.system("pip install requests"))
 
+import lyricsgenius
+
+print(os.path.dirname(lyricsgenius.__file__))
+
 import sys
 print(sys.path)
 print(sys.executable)
