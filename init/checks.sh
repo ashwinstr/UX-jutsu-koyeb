@@ -16,6 +16,7 @@ _changePythonVer() {
 }
 
 _checkImports() {
+    export PATH="$PATH:/usr/local/bin/python"
     ls -ls usr/local/bin/python*
 }
 
@@ -107,6 +108,10 @@ print(quote_plus("'$uNameAndPass'"))')
 _checkDatabase() {
     editLastMessage "Checking DATABASE_URL ..."
     pip3 install -U pymongo[srv]
+    local test_=$(runPythonCode '
+import pymongo
+print(pymongo.__file__)
+')
     echo $test_
     local mongoErr=$(runPythonCode '
 import pymongo
