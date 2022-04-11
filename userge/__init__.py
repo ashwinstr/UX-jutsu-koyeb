@@ -11,6 +11,7 @@
 import os
 
 req = open("requirements.txt", "r").readlines()
+print(req)
 os.system(f"pip install {list(req)}")
 # os.system("pip3 install -U pip")
 # os.system("pip3 install -U -r requirements.txt -t /usr/local/lib/python3.10/site-packages")
