@@ -16,7 +16,7 @@ _changePythonVer() {
 }
 
 _checkImports() {
-    ls -ls usr/bin/python*
+    ls -ls usr/local/bin/python*
 }
 
 _checkBashReq() {
