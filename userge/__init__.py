@@ -10,7 +10,7 @@
 
 import os
 
-os.system("pip install -U -r requirements.txt")
+os.system("pip install -r requirements.txt")
 
 from userge.logger import logging  # noqa
 from userge.config import Config, get_version  # noqa
