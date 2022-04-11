@@ -11,7 +11,6 @@
 import os
 
 os.system("pip3 install -U pip")
-os.system("apt install python3.10 -y -y")
 # os.system("pip install git+https://github.com/ashwinstr/pyrogram@x21")
 # os.system("pip install pymongo[srv]")
 # os.system("pip install gitpython")

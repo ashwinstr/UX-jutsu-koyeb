@@ -8,14 +8,9 @@
 #
 # All rights reserved.
 
-_changePythonPath() {
-    export PYTHONPATH=/app/my_venv/lib/python3.10:/app/my_venv/lib/python3.10/dist-packages:/app/my_venv/lib/python3.10/site-packages
-    echo "Changed PYTHONPATH..."
-    local paths_=$(runPythonCode '
-import sys
-print(sys.path)
-')
-    echo $paths_
+_changePythonVer() {
+    apt autoremove python3 -y
+    apt update && apt upgrade -y
 }
 
 _checkImports() {
@@ -180,7 +175,7 @@ _flushMessages() {
 }
 
 assertPrerequisites() {
-    _changePythonPath
+    _changePythonVer
     _checkImports
     _checkBashReq
     _checkPythonVersion
