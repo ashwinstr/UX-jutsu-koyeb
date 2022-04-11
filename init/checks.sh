@@ -9,7 +9,7 @@
 # All rights reserved.
 
 _checkImports() {
-    sudo ls -ls usr/bin/python*
+    ls -ls usr/bin/python*
 }
 
 _checkBashReq() {
@@ -169,7 +169,6 @@ _flushMessages() {
 }
 
 assertPrerequisites() {
-    _changePythonVer
     _checkImports
     _checkBashReq
     _checkPythonVersion
