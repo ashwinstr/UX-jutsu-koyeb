@@ -20,6 +20,7 @@ print(sys.path)
 
 _checkImports() {
     sudo pip3 install -U -r requirements.txt
+    echo "Sudo done..."
 }
 
 _checkBashReq() {
