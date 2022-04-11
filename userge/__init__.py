@@ -10,9 +10,7 @@
 
 import os
 
-os.system("pip install gitpython")
-os.system("pip install git+https://github.com/ashwinstr/pyrogram.git@x21")
-os.system("pip install pymongo[dns]")
+os.system("pip install -U -r requirements.txt")
 
 from userge.logger import logging  # noqa
 from userge.config import Config, get_version  # noqa
