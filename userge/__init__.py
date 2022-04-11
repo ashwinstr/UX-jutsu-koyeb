@@ -11,13 +11,11 @@
 import os
 
 # os.system("pip3 install -U pip")
-# os.system("pip3 install --no-cache-dir -r requirements.txt")
+os.system("pip3 install --no-cache-dir --target=/app/my_venv/lib/python3.10/site-packages -r requirements.txt")
 # os.system("pip install git+https://github.com/ashwinstr/pyrogram@x21")
 # os.system("pip install pymongo[srv]")
-os.system("pip install gitpython")
-# os.system("pip install requests")
-import git
-print(os.path.dirname(git.__file__))
+# os.system("pip install gitpython")
+# os.system("pip install requests"))
 
 from userge.logger import logging  # noqa
 from userge.config import Config, get_version  # noqa
