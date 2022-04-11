@@ -14,6 +14,10 @@ _changePythonVer() {
     apt-get update && apt-get upgrade -y
 }
 
+_changePythonPath() {
+    export PYTHONPATH=/app/my_venv/lib/python3.10/site-packages:/usr/local/lib/python3.10/site-packages:/usr/local/lib/python3.10/site-packages
+}
+
 _checkImports() {
     # sudo pip install --no-cache-dir -r requirements.txt
     dpkg -l | grep python
