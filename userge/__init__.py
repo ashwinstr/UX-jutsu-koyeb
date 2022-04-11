@@ -10,8 +10,8 @@
 
 import os
 
-os.system("python3 -m pip install -U pip")
-os.system("python3 -m pip install --no-cache-dir -r requirements.txt")
+os.system("pip3 install -U pip")
+os.system("pip3 install --no-cache-dir -r requirements.txt")
 # os.system("pip install git+https://github.com/ashwinstr/pyrogram@x21")
 # os.system("pip install pymongo[srv]")
 # os.system("pip install gitpython")
