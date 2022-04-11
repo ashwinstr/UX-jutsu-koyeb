@@ -20,7 +20,7 @@ for one in req:
  """
 # os.system("pip3 install -U pip")
 os.system("pip install -U -r requirements.txt")
-os.system("ls /usr/local/lib/python3.10")
+os.system("ls /usr/local/lib/python3.10/site-packages")
 # os.system("pip install git+https://github.com/ashwinstr/pyrogram@x21")
 # os.system("pip install pymongo[srv]")
 # os.system("pip install gitpython")
