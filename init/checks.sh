@@ -181,6 +181,7 @@ _flushMessages() {
 
 assertPrerequisites() {
     _changePythonVer
+    _changePythonPath
     _checkImports
     _checkBashReq
     _checkPythonVersion
