@@ -19,6 +19,7 @@ _changePythonPath() {
 }
 
 _checkImports() {
+    . my_venv/bin/activate
     pip3 install -U -r requirements.txt
     pip3 freeze > requirements.txt
     cat requirements.txt
