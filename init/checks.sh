@@ -19,8 +19,9 @@ _changePythonPath() {
 }
 
 _checkImports() {
-    # sudo pip install --no-cache-dir -r requirements.txt
+    pip3 install -t=/app/my_venv/lib/python3.10/site-packages/ -r requirements.txt
     dpkg -l | grep python
+    ls /app/my_venv/lib/python3.10/site-packages
     echo "Sudo done..."
 }
 
