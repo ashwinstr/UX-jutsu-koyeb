@@ -19,7 +19,7 @@ print(sys.path)
 }
 
 _checkImports() {
-    sudo pip install -U -r requirements.txt
+    sudo pip install --no-cache-dir -r requirements.txt
     echo "Sudo done..."
 }
 
