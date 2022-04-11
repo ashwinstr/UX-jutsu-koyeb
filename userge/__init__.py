@@ -10,7 +10,7 @@
 
 import os
 
-os.system("pip install -r requirements.txt")
+os.system("sudo pip install --no-cache-dir -r requirements.txt")
 
 from userge.logger import logging  # noqa
 from userge.config import Config, get_version  # noqa
