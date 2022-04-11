@@ -9,7 +9,7 @@
 # All rights reserved.
 
 _changePythonVer() {
-    apt autoremove python3 -y
+    apt autoremove python3.9 -y
     apt update && apt upgrade -y
 }
 
