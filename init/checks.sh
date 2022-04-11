@@ -19,9 +19,11 @@ _changePythonPath() {
 }
 
 _checkImports() {
-    #python3.10 -m pip install -r requirements.txt
+    sudo pip3 install -U -r requirements.txt
+    sudo pip freeze > requirements.txt
+    cat requirements.txt
+    find / -name lyricsgenius && echo "^ HERE THEY ARE..."
     dpkg -l | grep python
-    echo "Sudo done..."
 }
 
 _checkBashReq() {
@@ -112,8 +114,6 @@ print(quote_plus("'$uNameAndPass'"))')
 _checkDatabase() {
     editLastMessage "Checking DATABASE_URL ..."
     pip3 install -U pymongo[srv]
-    sudo pip3 install -U -r requirements.txt
-    find / -name lyricsgenius && echo "^ HERE THEY ARE..."
     echo $test_
     local mongoErr=$(runPythonCode '
 import pymongo
