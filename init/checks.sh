@@ -16,7 +16,8 @@ _changePythonVer() {
 }
 
 _checkImports() {
-    export PATH="$PATH:/usr/local/bin/python"
+    whereis python3
+    export PATH="$PATH:/usr/local/bin/python3.10"
     ls -ls usr/local/bin/python*
 }
 
