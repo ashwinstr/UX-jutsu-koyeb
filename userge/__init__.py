@@ -10,19 +10,13 @@
 
 import os
 
-""" req = open("requirements.txt", "r").readlines()
-
-for one in req:
-    try:
-        os.system(f"pip install {one}")
-    except Exception as e:
-        print(f"Installing {one} failed - {e}")
- """
+req = open("requirements.txt", "r").readlines()
+os.system(f"pip install {req}")
 # os.system("pip3 install -U pip")
-os.system("pip3 install -U -r requirements.txt -t /usr/local/lib/python3.10/site-packages")
-os.system("ls /usr/local/lib/python3.10/site-packages")
-print("This is python 3.10...")
-os.system("pip show GitPython")
+# os.system("pip3 install -U -r requirements.txt -t /usr/local/lib/python3.10/site-packages")
+# os.system("ls /usr/local/lib/python3.10/site-packages")
+# print("This is python 3.10...")
+# os.system("pip show GitPython")
 # os.system("pip install git+https://github.com/ashwinstr/pyrogram@x21")
 # os.system("pip install pymongo[srv]")
 # os.system("pip install gitpython")
