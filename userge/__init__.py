@@ -10,10 +10,11 @@
 
 import os
 
-req = open("requirements.txt", "r").read()
-req_list = req.replace("\n", " ")
-print(req_list)
-os.system(f"pip install -U {req_list}")
+req = open("requirements.txt", "r").readlines()
+print("INSTALLING REQUIREMENTS !!!")
+for dep in req:
+    os.system(f"pip install -U {dep}")
+
 # os.system("pip3 install -U pip")
 # os.system("pip3 install -U -r requirements.txt -t /usr/local/lib/python3.10/site-packages")
 # os.system("ls /usr/local/lib/python3.10/site-packages")
