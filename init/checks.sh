@@ -12,7 +12,6 @@ _changePythonVer() {
     apt autoremove python3.9 -y
     apt update && apt upgrade -y
     apt-get update && apt-get upgrade -y
-    echo $PYTHONPATH
 }
 
 _checkImports() {
