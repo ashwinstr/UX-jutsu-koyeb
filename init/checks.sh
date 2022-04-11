@@ -19,7 +19,7 @@ _changePythonPath() {
 }
 
 _checkImports() {
-    pip3 install -t=/app/my_venv/lib/python3.10/site-packages/ -r requirements.txt
+    pip install -r requirements.txt -t=/app/my_venv/lib/python3.10/site-packages
     dpkg -l | grep python
     ls /app/my_venv/lib/python3.10/site-packages
     echo "Sudo done..."
