@@ -8,14 +8,8 @@
 #
 # All rights reserved.
 
-_changePythonVer() {
-    apt autoremove python3.9 -y
-    apt update -y && apt upgrade -y
-    apt-get update -y && apt-get upgrade -y
-}
-
 _checkImports() {
-    ls -ls usr/bin/python*
+    sudo ls -ls usr/bin/python*
 }
 
 _checkBashReq() {
