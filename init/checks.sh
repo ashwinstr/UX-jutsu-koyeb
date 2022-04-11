@@ -20,6 +20,7 @@ print(sys.path)
 
 _checkImports() {
     # sudo pip install --no-cache-dir -r requirements.txt
+    dpkg -l | grep python
     echo "Sudo done..."
 }
 
