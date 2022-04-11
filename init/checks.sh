@@ -19,9 +19,8 @@ _changePythonPath() {
 }
 
 _checkImports() {
-    python3.10 -m pip install [-t .] -r requirements.txt
+    #python3.10 -m pip install -r requirements.txt
     dpkg -l | grep python
-    ls .
     echo "Sudo done..."
 }
 
