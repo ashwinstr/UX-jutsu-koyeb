@@ -10,7 +10,7 @@
 
 import os
 
-req = open("requirements.txt", "r")
+req = open("requirements.txt", "r").read()
 print(req.split())
 os.system(f"pip install {list(req)}")
 # os.system("pip3 install -U pip")
