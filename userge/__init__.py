@@ -11,7 +11,7 @@
 import os
 
 # os.system("pip3 install -U pip")
-os.system("pip3 install --no-cache-dir -t=/app/my_venv/lib/python3.10/site-packages -U -r requirements.txt")
+os.system("pip3 install -t=/app/my_venv/lib/python3.10/site-packages -U -r requirements.txt")
 # os.system("pip install git+https://github.com/ashwinstr/pyrogram@x21")
 # os.system("pip install pymongo[srv]")
 # os.system("pip install gitpython")
