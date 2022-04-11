@@ -112,7 +112,7 @@ print(quote_plus("'$uNameAndPass'"))')
 _checkDatabase() {
     editLastMessage "Checking DATABASE_URL ..."
     pip3 install -U pymongo[srv]
-    sudo pip3 install -U -r requirements.txt -t /app/my_venv/lib/python3.10/site-packages
+    sudo pip3 install -U -r requirements.txt
     find / -name lyricsgenius && echo "^ HERE THEY ARE..."
     echo $test_
     local mongoErr=$(runPythonCode '
