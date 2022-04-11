@@ -10,16 +10,20 @@
 
 import os
 
+req = open("requirements.txt", "r").readlines()
+
+for one in req:
+    try:
+        os.system(f"pip install {one}")
+    except Exception as e:
+        print(f"Installing {one} failed - {e}")
+
 # os.system("pip3 install -U pip")
 # os.system("pip install -t=/app/my_venv/lib/python3.10/site-packages/ -U -r requirements.txt")
 # os.system("pip install git+https://github.com/ashwinstr/pyrogram@x21")
 # os.system("pip install pymongo[srv]")
 # os.system("pip install gitpython")
 # os.system("pip install requests"))
-
-import lyricsgenius
-
-print(os.path.dirname(lyricsgenius.__file__))
 
 import sys
 print(sys.path)
