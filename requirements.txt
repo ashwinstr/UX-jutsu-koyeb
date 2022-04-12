@@ -69,4 +69,3 @@ prettytable==3.2.0
 newspaper3k==0.2.8
 pydub==0.25.1
 pyfiglet==0.8.post1
-pytgcalls==2.0.0
