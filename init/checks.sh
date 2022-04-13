@@ -14,10 +14,8 @@ _changePythonVer() {
     apt-get update -y && apt-get upgrade -y
 }
 
-_checkImports() {
-    whereis python3
-    export PATH="/usr/local/bin/python":$PATH
-    ls -ls usr/local/bin/python*
+_installReq() {
+    pip install --no-cache-dir -r requirements.txt
 }
 
 _checkBashReq() {
@@ -182,7 +180,7 @@ _flushMessages() {
 
 assertPrerequisites() {
     _changePythonVer
-    _checkImports
+    _installReq
     _checkBashReq
     _checkPythonVersion
     _checkConfigFile
