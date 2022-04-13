@@ -11,12 +11,13 @@
 _changePythonVer() {
     apt autoremove python3.9 -y
     apt update -y && apt upgrade -y
+    apt install python3.10-distutils -y
     apt-get update -y && apt-get upgrade -y
 }
 
 _installReq() {
-    # pip install --no-cache-dir -U -r requirements.txt
-    echo 'Requirements are already installed...'
+    pip install --no-cache-dir -U -r requirements.txt
+    echo 'Requirements are installed...'
 }
 
 _checkBashReq() {
