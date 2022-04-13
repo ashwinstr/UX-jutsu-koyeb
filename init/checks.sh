@@ -8,11 +8,11 @@
 #
 # All rights reserved.
 
-_changePythonVer() {
-    apt autoremove python3.9 -y
-    apt update -y && apt upgrade -y
-    apt-get update -y && apt-get upgrade -y
-}
+#_changePythonVer() {
+#    apt autoremove python3.9 -y
+#    apt update -y && apt upgrade -y
+#    apt-get update -y && apt-get upgrade -y
+#}
 
 _installReq() {
     # pip install --no-cache-dir -U -r requirements.txt
@@ -174,7 +174,7 @@ _flushMessages() {
 }
 
 assertPrerequisites() {
-    _changePythonVer
+#    _changePythonVer
     _installReq
     _checkBashReq
     _checkPythonVersion
