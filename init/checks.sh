@@ -15,7 +15,8 @@ _changePythonVer() {
 }
 
 _installReq() {
-    pip install --no-cache-dir -U -r requirements.txt
+    # pip install --no-cache-dir -U -r requirements.txt
+    echo 'Requirements are already installed...'
 }
 
 _checkBashReq() {
