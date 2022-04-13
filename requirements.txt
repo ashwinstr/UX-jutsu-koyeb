@@ -10,7 +10,7 @@ gitpython
 google-api-python-client>=1.12.8
 google-auth-httplib2>=0.0.4
 google-auth-oauthlib>=0.4.2
-git+https://github.com/Joeclinton1/google-images-download@patch-1
+google-images-download @ git+https://github.com/Joeclinton1/google-images-download@patch-1
 googletrans==3.1.0a0
 gtts
 hachoir>=3.1.1
