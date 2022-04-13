@@ -15,7 +15,7 @@ _changePythonVer() {
 }
 
 _installReq() {
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir -U -r requirements.txt
 }
 
 _checkBashReq() {
