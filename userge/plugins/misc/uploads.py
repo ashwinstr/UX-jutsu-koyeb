@@ -361,6 +361,8 @@ async def audio_upload(
                 thumb = "album_cover.jpg"
         except stagger.errors.NoTagError:
             pass
+        except Exception as e:
+            pass
         if not thumb:
             thumb = await get_thumb(str_path)
     metadata = extractMetadata(createParser(str_path))
