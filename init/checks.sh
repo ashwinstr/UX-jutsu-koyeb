@@ -14,11 +14,6 @@ _changePythonVer() {
     apt-get update -y && apt-get upgrade -y
 }
 
-_installReq() {
-    pip install --no-cache-dir -U -r requirements.txt
-    echo 'Requirements are installed...'
-}
-
 _checkBashReq() {
     log "Checking Bash Commands ..."
     command -v jq &> /dev/null || quit "Required command : jq : could not be found !"
@@ -175,7 +170,6 @@ _flushMessages() {
 
 assertPrerequisites() {
     _changePythonVer
-    _installReq
     _checkBashReq
     _checkPythonVersion
     _checkConfigFile
